@@ -11,7 +11,10 @@ RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" \
     > /etc/apt/sources.list.d/php.list
 
 RUN apt-get update && \
-    apt-get install -y php7.1 mc git nano vim
+    apt-get install -y php7.1 php7.1-cli php7.1-curl \
+    php7.1-xml php7.1-intl php7.1-mbstring php7.1-json \
+    php7.1-bcmath php7.1-mysql php7.1-sqlitemc \
+    git nano vim
 
 RUN curl -sS https://getcomposer.org/installer | \
     php -- --install-dir=/usr/local/bin --filename=composer
