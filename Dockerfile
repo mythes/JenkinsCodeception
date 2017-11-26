@@ -2,7 +2,8 @@ FROM jenkins/jenkins:lts
 
 USER root
 
-RUN apt-get update && apt-get install -y apt-transport-https lsb-release ca-certificates
+RUN apt-get update && apt-get install -y apt-transport-https \
+    lsb-release ca-certificates sudo
 
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg \
     https://packages.sury.org/php/apt.gpg
