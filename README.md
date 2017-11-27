@@ -11,8 +11,8 @@
 5. create new Item
 6. add git repo && credentials for pull project
 7. at Build section add shell commands:
-  composer update || installer
+  composer update
   cd {test_directory}
-  ../vendor/bin/codecept run api --html
+  ../vendor/bin/codecept run {suite} --html
 8. at Post build actions add Publish HTML reports
 9. done
