@@ -7,7 +7,6 @@
   - xUnit Plugin, jUnit Plugin - to process and display Codeception XML reports
   - HTML Publisher Plugin - to process Codeception HTML reports
   - AnsiColor - to show colorized console output.
-  - php Plugin
 5. create new Item
 6. add git repo && credentials for pull project
 7. at Build section add shell commands:
