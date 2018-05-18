@@ -1,4 +1,4 @@
-## #HOW TO RUN
+### HOW TO RUN
 
 1. run ```docker build -t jenkins:codeception .```
 2. run ```docker run -i -p 8080:8080 -p 50000:50000 jenkins:codeception```
